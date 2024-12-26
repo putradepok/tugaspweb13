@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Flora</title>
+    <!-- Menghubungkan dengan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS untuk desain Hotel Flora */
+        header {
+            background: url('hotel-flora-header.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .card-body h5 {
+            font-size: 1.5rem;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigasi Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hotel Flora</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fasilitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Galeri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header Hotel -->
+<header>
+    <h1>Selamat Datang di Hotel Flora</h1>
+    <img src="header.png" width="4500px" alt="hotel Flora">
+</header>
+
+<!-- Deskripsi Hotel Flora -->
+<section class="container mt-4">
+    <h2 class="section-title">Tentang Hotel Flora</h2>
+    <p>Hotel Flora adalah penginapan bintang 4 yang terletak di jantung kota. Kami menyediakan fasilitas lengkap untuk kenyamanan Anda, mulai dari kamar yang nyaman hingga layanan kelas dunia. Nikmati suasana tenang di tengah keramaian kota, hanya beberapa menit dari pusat perbelanjaan, restoran, dan tempat wisata utama.</p>
+</section>
+
+<!-- Fasilitas Hotel -->
+<section class="container mt-4">
+    <h3 class="section-title">Fasilitas Kami</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="renang.webp" class="card-img-top" alt="Fasilitas 1">
+                <div class="card-body">
+                    <h5 class="card-title">Kolam Renang</h5>
+                    <p class="card-text">Nikmati berenang di kolam renang luar ruang kami yang luas dengan pemandangan yang indah.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="restoran.webp" class="card-img-top" alt="Fasilitas 2">
+                <div class="card-body">
+                    <h5 class="card-title">Restoran</h5>
+                    <p class="card-text">Restoran kami menyajikan berbagai masakan lokal dan internasional dengan cita rasa yang lezat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sauna.jpg " class="card-img-top" alt="Fasilitas 3">
+                <div class="card-body">
+                    <h5 class="card-title">Spa & Sauna</h5>
+                    <p class="card-text">Relaksasi maksimal dengan layanan spa dan sauna yang menenangkan tubuh dan pikiran.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galeri Gambar -->
+<section class="container mt-4">
+    <h3 class="section-title">Galeri Kami</h3>
+    <div class="row gallery">
+        <div class="col-md-4">
+            <img src="galeri1.jpg" class="img-fluid" alt="Hotel Flora">
+        </div>
+        <div class="col-md-4">
+            <img src="galeri2.jpg" class="img-fluid" alt="Hotel Flora">
+        </div>
+        <div class="col-md-4">
+            <img src="galeri3.jpg" class="img-fluid" alt="Hotel Flora">
+        </div>
+    </div>
+</section>
+
+<!-- Form Pemesanan -->
+<section class="container mt-4">
+    <h3 class="section-title">Pemesanan Kamar</h3>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Nomor Telepon</label>
+            <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Pesan Sekarang</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Hotel Flora - Semua Hak Dilindungi</p>
+</footer>
+
+<!-- Menghubungkan dengan Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
